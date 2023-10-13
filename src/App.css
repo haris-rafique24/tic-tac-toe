@@ -1,0 +1,66 @@
+/* App.css */
+
+.game {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #333;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.square:hover {
+  background: #f2f2f2;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-info {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Highlight the winning squares */
+.winner {
+  background: #4caf50;
+  color: #fff;
+}
+
+/* Style the restart button */
+.restart-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+}
